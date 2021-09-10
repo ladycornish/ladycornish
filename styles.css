@@ -104,7 +104,7 @@ body {
 }
 
 .nav {
-    width: 70%;
+    width: 100vw;
     visibility: hidden;
     height: 0;
 }
@@ -115,20 +115,23 @@ body {
 
 .nav--visible {
     visibility: visible;
+    width: 100%;
     height: auto;
     position: relative;
-    top: 2.9rem;
+    top: 0;
     border: 2px solid var(--golden-col);
+    line-height: 1.5;
 }
 
 .nav-list {
     width:100%;
-    display: block;
+    display: flex;
     background: var(--off-white-col);
-    text-align:end;
-    flex-direction: column;
+    text-align:center;
     padding: 1em;
+    flex-direction: column;
     color: var(--off-black);
+    /* transition: all .3s linear; */
 }
 
 
@@ -150,18 +153,15 @@ body {
     font-size: 4rem;
     color: var(--chestnut-color);
     padding: .125em 0;
+    transition: transform .2s linear;
 }
 
 .icon:hover {
-    animation: wiggle 75ms infinite;
-    animation-timing-function: linear;
+    color: var(--golden-col);
+    transform: scale(1.2);
+    
 }
 
-@keyframes wiggle {
-    0% { transform: translate(2px, 0); }
-    50% { transform: translate(-2px, 0); }
-    100% { transform: translate(2px, 0); }
-  }
   
 
 .container {
