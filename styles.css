@@ -4,7 +4,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    text-decoration: none !important;
+    text-decoration: none;
     font-family: 'Playfair Display', sans-serif;
     -webkit-tap-highlight-color: transparent;
 }
@@ -175,11 +175,11 @@ body {
     font-size: 2.5rem;
     color: var(--off-black);
     margin: 0 0.8rem;
-    transition: font-size .4s linear, color .4s ease-in;
 }
 
 .list-link:hover {
     color:  var(--golden-col);
+    text-decoration: underline !important;
 }
 
 .main-title {
