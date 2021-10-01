@@ -46,14 +46,15 @@ body {
 
 .header {
     width: 100vw;
+    height: auto;
     display: flex;
+    flex-direction: column;
     background-color: var(--off-white-col);
     border-bottom: 2px solid var(--golden-col);
-    padding: 0 3rem;
+    padding: 0 2.5rem;
     position: fixed;
     align-items: center;
-    justify-content: space-evenly;
-
+    justify-content: center;
     z-index: 100;
 }
 
@@ -104,21 +105,22 @@ body {
 }
 
 .nav {
-    width: 100vw;
+    width: 100%;
     visibility: hidden;
     height: 0;
 }
 
 .logo-wrapper {
-    width: 15%;
+    width: 200px;
 }
 
 .nav--visible {
     visibility: visible;
-    width: 100%;
+    width: 100vw;
     height: auto;
-    position: relative;
+    position: absolute;
     top: 0;
+    left:0;
     border: 2px solid var(--golden-col);
     line-height: 1.5;
 }
@@ -172,9 +174,9 @@ body {
 }
 
 .list-link{
-    font-size: 2.5rem;
+    font-size: 2rem;
     color: var(--off-black);
-    margin: 0 0.8rem;
+    padding-left: .8rem
 }
 
 .list-link:hover {
@@ -244,7 +246,7 @@ body {
     text-align: center;
     font-size: 8vmin;
     padding-top: 1em;
-    padding-bottom: 1em;
+    padding-bottom: .25em;
     color: var(--off-black);
 }
 
@@ -520,10 +522,17 @@ summary {
 
 /* Footer */
 
+
+
 .footer {
     background-color:var(--light-grey-col);
     color:var(--off-white-col);
 }
+
+.footer img {
+    max-width: 250px;
+}
+
 
 .footer-container {
     width: 90%;
@@ -617,15 +626,38 @@ summary {
 
 /* End of buttons */
 
-@media (max-width: 900px) {
+
+
+
+
+
+
+
+
+@media (min-width: 1000px) {
     
-    .header {
-        flex-direction: column;
+    
+    .nav-toggle {
+        visibility: hidden;
     }
 
-    .logo-wrapper {
-        width: 30vw;
+    .nav{
+        visibility: visible;
+        justify-content: center;
     }
+    .nav-list {
+        flex-direction: row;
+        justify-content: end;
+    }
+    .logo-wrapper {
+        width: 250px;
+    }
+}
+
+@media (max-width: 900px) {
+    
+   
+
     .container {
         height: 90%;
         width: 60%;
@@ -671,79 +703,4 @@ summary {
 
 
 
-
-@media (min-width: 800px) {
-    .nav-toggle {
-        visibility: hidden;
-    }
-
-    .nav{
-        visibility: visible;
-        display: flex;
-        justify-content: center;
-        height: auto;
-        top: 0;
-    }
-    .nav-list {
-        flex-direction: row;
-        justify-content: center;
-    }
-}
-
-/* CERTS PAGE */
-
-main{
-    width: 100%;
-    position: relative;
-    padding-top: 10rem;
-}
-
-main::before {
-    content: "";
-    background-color: var(--light-pink-col);
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    opacity: 0.7;
-    z-index: -10;
-}
-
-.certificates {
-    width: 100%;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    margin-top: 3rem;
-    padding: 0 2rem;
-}
-
-.cert-heading {
-    width: 80%;
-    text-align: center;
-    margin: 0 auto;
-    font-size: 12vw;
-    color: var(--off-black);
-    border-bottom: 2px solid var(--chestnut-color);
-}
-
-.cert-box {
-    margin: 2rem
-}
-
-.cert-title {
-    color: var(--off-black);
-    font-size: 3rem;
-
-    text-align: center;
-}
-
-.cert-text {
-    color: var(--off-black);
-    font-size: 2rem;;
-
-    text-align: center;
-}
 
