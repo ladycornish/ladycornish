@@ -291,6 +291,42 @@ body {
     list-style: disc;
 }
 
+.link {
+    color: var(--chestnut-color);
+}
+.link:hover, 
+.link:focus {
+    text-decoration: underline;
+}
+
+.link:visited {
+    color: var(--light-grey-col);
+}
+
+.aff-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 30px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.affiliate {
+    margin-top: 60px;
+}
+
+.aff-text {
+    font-size: 1.2rem;
+    max-width: 600px;
+    line-height: 1.5;
+    text-align: center;
+    padding: 20px 5px 20px 5px;
+    border-left: 1px solid var(--chestnut-color);
+    border-right: 1px solid var(--chestnut-color);
+}
+
 
 .contact-btn {
     font-size: 2.5rem;
