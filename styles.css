@@ -462,12 +462,15 @@ body {
     padding: 4rem 0;
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: flex-start;
 }
 .test {
     width: 100%;
     max-width: 800px;
     margin: 0 2em;
+    padding: 10px;
+    box-shadow: 2px 2px 2px var(--light-grey-col), -2px -2px 2px var(--light-grey-col);
+    
 }
 
 .test-text {
@@ -742,6 +745,18 @@ summary {
         align-items: center;;
     }
     
+}
+@media(max-width: 550px) {
+    .test-container {
+
+        flex-direction:column;
+        justify-content: center;
+        
+    }
+
+    .test {
+        margin-bottom: 40px;
+    }
 }
 
 
