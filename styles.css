@@ -502,6 +502,11 @@ body {
     font-size: 2rem;
     padding-top: 1em;
     text-align: center;
+    color: var(--off-black);
+}
+
+.customer:hover {
+    color: var(--chestnut-color);
 }
 
 /* End of Section 5 */
