@@ -1,15 +1,22 @@
-const navToggle = document.querySelector(".nav-toggle");
-const nav = document.querySelector(".nav-list");
+const menu = document.querySelector(".nav-list");
+const menuWrapper = document.querySelector(".nav-wrapper");
+const hamburger = document.querySelector(".nav-toggle");
+const closeBtn = document.querySelector(".close");
 
-const list = document.querySelectorAll(".list-link");
+const showMenu = () => {
+  hamburger.style.display = "none";
+  closeBtn.style.transform = "translateY(0)";
+  menu.style.transform = "translateX(0)";
+  menuWrapper.style.transform = "translateX(0)";
+};
 
+const hideMenu = () => {
+  closeBtn.style.transform = "translateY(-20rem)";
+  hamburger.style.display = "block";
+  menu.style.transform = "translateX(200%)";
+  menuWrapper.style.transform = "translateX(-200%)";
+};
 
-navToggle.addEventListener("click", () => {
-    nav.classList.toggle("nav--visible");
-
-    setTimeout(function () {
-        document.querySelector('.nav-list').style.display = 'none'
-    }, 4000)
-    setTimeout("location.reload(true);", 4000);
-});
-
+hamburger.addEventListener("click", showMenu);
+closeBtn.addEventListener("click", hideMenu);
+menuWrapper.addEventListener("click", hideMenu);
