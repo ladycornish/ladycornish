@@ -94,7 +94,8 @@ body {
   display: block;
   margin: 0 auto;
   height: 3px;
-  background: var(--off-white-col);
+  background: white;
+  z-index: 11;
 }
 
 .hamburger::before,
