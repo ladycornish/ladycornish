@@ -45,6 +45,7 @@ body {
   background-image: url("images/background.jpg");
   background-size: cover;
   background-repeat: no-repeat;
+  background-position: 80%;
   position: relative;
 }
 
