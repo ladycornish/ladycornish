@@ -399,9 +399,8 @@ body {
   margin-bottom: 3rem;
 }
 
-.ready-container img {
+.ready-img {
   max-width: 350px;
-  float: right;
 }
 
 .ready {
