@@ -374,6 +374,7 @@ body {
   margin: 2rem 0;
   background-color: var(--olive-green);
   color: var(--light-color);
+  margin: 20px auto;
 }
 
 .enquire:hover {
@@ -607,13 +608,13 @@ body {
 }
 
 .faq-container {
-  width: 80%;
   max-width: 800px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
   border-top: 1px solid var(--chestnut-color);
+  padding: 0 20px;
 }
 
 summary {
@@ -633,7 +634,7 @@ summary {
 .faq-text {
   width: 100%;
   line-height: 2;
-  font-size: 1.8rem;
+  font-size: 2rem;
   padding: 1rem 4rem;
   color: var(--dark-grey);
 }
@@ -689,6 +690,73 @@ summary {
 }
 
 /* End of Store Section */
+
+/* Maintenance Page */
+
+.maintenance-section {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  background-color: #92a998;
+  position: relative;
+}
+.maintenance-title {
+  margin-top: 3rem;
+  font-size: 10vmin;
+  text-align: left;
+  color: var(--dark-grey);
+  padding-bottom: 2rem;
+  padding-left: 10px;
+}
+
+#maintenance-subtitle {
+  color: #f1f0ef;
+  padding-bottom: 40px;
+}
+
+.maintenance-caption {
+  font-size: 3rem;
+  margin-bottom: 20px;
+  color: #92a998;
+}
+
+.maintenance-caption-text {
+  width: 70%;
+  margin: 0 auto;
+  font-size: 1.8rem;
+  padding-bottom: 40px;
+
+  color: var(--dark-grey);
+}
+
+.maintenance-list {
+  list-style: inside;
+  text-align: left;
+  font-size: 2rem;
+}
+.TandCs-header {
+  font-size: 2.2rem;
+}
+.TandCs {
+  font-size: 1.4rem;
+}
+
+.faq-container {
+  width: 80%;
+}
+.faq {
+  width: 100%;
+  margin-bottom: 20px;
+}
+.faq h6 {
+  font-size: 2rem;
+}
+.faq p {
+  font-size: 1.6rem;
+}
+
+/* End of Maintenance Page */
 
 /* Footer */
 
